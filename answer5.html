@@ -1,0 +1,58 @@
+<html>
+<head>
+<title> Change the Content </title>
+<script>
+function changeContent()
+{
+rn = window.prompt("Input the Row number(0,1,2)", "0");
+cn = window.prompt("Input the Column number(0,1)","0");
+content = window.prompt("Input the Cell content");  
+var x=document.getElementById('cell').rows[parseInt(rn,10)].cells;
+x[parseInt(cn,10)].innerHTML=content;
+}
+</script>
+</head>
+<body back>
+<form>
+
+<table id="cell" border="1" width=400px>
+<tr>
+<td> Row1Col1 </td>
+<td> Row1Col2 </td>
+<td> Row1Col3 </td>
+<td> Row1Col4 </td>
+<td> Row1Col5 </td>
+</tr>
+<tr>
+<td> Row2Col1 </td>
+<td> Row2Col2 </td>
+<td> Row2Col3 </td>
+<td> Row2Col4 </td>
+<td> Row2Col5 </td>
+</tr>
+<tr>
+<td> Row3Col1 </td>
+<td> Row3Col2 </td>
+<td> Row3Col3 </td>
+<td> Row3Col4 </td>
+<td> Row3Col5 </td>
+</tr>
+<tr>
+<td> Row4Col1 </td>
+<td> Row4Col2 </td>
+<td> Row4Col3 </td>
+<td> Row4Col4 </td>
+<td> Row4Col5 </td>
+</tr>
+<tr>
+<td> Row5Col1 </td>
+<td> Row5Col2 </td>
+<td> Row5Col3 </td>
+<td> Row5Col4 </td>
+<td> Row5Col5 </td>
+</tr>
+</table>
+<input type="button" onclick="changeContent()" value="Change content">
+
+</form>
+</body></html>
